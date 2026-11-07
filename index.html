@@ -5,42 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>9bynker</title>
     <style>
-        /* Подключаем оригинальный шрифт Кинопоиска из веб-архива */
+        /* Подключаем шрифт локально из вашего репозитория */
         @font-face {
             font-family: 'Graphik Kinopoisk LC Web';
-            src: url('https://yastatic.net') format('woff2'),
-                 url('https://yastatic.net') format('woff');
-            font-weight: 500;
+            src: url('GraphikKinopoiskLCWeb-Regular.woff2') format('woff2');
+            font-weight: normal;
             font-style: normal;
         }
 
-        @font-face {
-            font-family: 'Graphik Kinopoisk LC Web';
-            src: url('https://yastatic.net') format('woff2'),
-                 url('https://yastatic.net') format('woff');
-            font-weight: 700;
-            font-style: normal;
-        }
-
-        /* Общие стили страницы в стиле Кинопоиска (темная стильная тема) */
         body {
             font-family: 'Graphik Kinopoisk LC Web', sans-serif;
-            background-color: #141414; /* Темный фон */
+            background-color: #141414;
             color: #ffffff;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
             margin: 0;
+            overflow: hidden;
         }
 
-        /* Стиль для вашего заголовка */
         h1 {
             font-size: 4rem;
             font-weight: 700;
             letter-spacing: -1px;
             margin: 0;
-            /* Красивый градиент: от белого к фирменному оранжевому Кинопоиска */
             background: linear-gradient(45deg, #ffffff, #f50);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -53,3 +42,4 @@
 
 </body>
 </html>
+
